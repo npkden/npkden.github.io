@@ -139,12 +139,22 @@
                     <div class="row">
                         <div class="item">
                             <div class="col-md-12">
-                                <a href="img/recentwork1.JPG" data-lightbox="image"><img src="img/recentwork1.JPG" alt="image 2"></a>
+                                <a href="img/recentwork1.JPG" data-lightbox="image"><img src="img/recentwork1.JPG" alt="image 1"></a>
                             </div>
                         </div>
                         <div class="item second-item">
                             <div class="col-md-12">
                                 <a href="img/recentwork3.JPG" data-lightbox="image"><img src="img/recentwork3.JPG" alt="image 2"></a>
+                            </div>
+                        </div>
+                        <div class="item third-item">
+                            <div class="col-md-12">
+                                <a href="img/recentwork5.png" data-lightbox="image"><img src="img/recentwork5.png" alt="image 3"></a>
+                            </div>
+                        </div>
+                        <div class="item third-item">
+                            <div class="col-md-12">
+                                <a href="img/recentwork4.png" data-lightbox="image"><img src="img/recentwork4.png" alt="image 4"></a>
                             </div>
                         </div>
                     </div>
@@ -283,7 +293,6 @@
                     'message_html': htmlMessage
                 }
             };
-
             $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
                 type: 'POST',
                 data: JSON.stringify(data),
@@ -294,31 +303,25 @@
                 alert('Oops... ' + JSON.stringify(error));
             });
         }
-
         // Hide Header on on scroll down
         var didScroll;
         var lastScrollTop = 0;
         var delta = 5;
         var navbarHeight = $('header').outerHeight();
-
         $(window).scroll(function (event) {
             didScroll = true;
         });
-
         setInterval(function () {
             if (didScroll) {
                 hasScrolled();
                 didScroll = false;
             }
         }, 250);
-
         function hasScrolled() {
             var st = $(this).scrollTop();
-
             // Make sure they scroll more than delta
             if (Math.abs(lastScrollTop - st) <= delta)
                 return;
-
             // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > navbarHeight) {
@@ -330,7 +333,6 @@
                     $('header').removeClass('nav-up').addClass('nav-down');
                 }
             }
-
             lastScrollTop = st;
         }
     </script>
