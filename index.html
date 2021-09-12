@@ -57,7 +57,6 @@
         <div id="main-nav" class="collapse navbar-collapse">
             <nav>
                 <ul class="nav navbar-nav">
-                    <li><a href="#top">Home</a></li>
                     <li><a href="#featured">Featured</a></li>
                     <li><a href="#projects">Recent Projects</a></li>
                     <li><a href="#contact">Contact Us</a></li>
@@ -443,15 +442,7 @@
     <script src="js/main.js"></script>
 
     <script>
-        //Email Functionality
-        var submitButton = document.getElementById("submit_form");
-        var form = document.getElementById("email_form");
-        form.addEventListener("submit", function (e) {
-            setTimeout(function () {
-                submitButton.value = "Sending...";
-                submitButton.disabled = true;
-            }, 1);
-        });
+        
         // Hide Header on on scroll down
         var didScroll;
         var lastScrollTop = 0;

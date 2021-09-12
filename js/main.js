@@ -24,6 +24,10 @@ jQuery(document).ready(function ($) {
         $('#main-nav').toggleClass("open");
     });
 
+    $('body').on('click', function (event) {
+        event.preventDefault();
+        $('#main-nav').removeClass("in");
+    });
 
     $('.tabgroup > div').hide();
     $('.tabgroup > div:first-of-type').show();
