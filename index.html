@@ -5,479 +5,492 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Stairsfactory - Best prices for interior stairs!</title>
-    <meta name="description" content="Get the cheapest interior staircases in montreal with high quality here!">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/fontAwesome.css">
-    <link rel="stylesheet" href="css/light-box.css">
-    <link rel="stylesheet" href="css/owl-carousel.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <style>
-        .owl-stage{
-            margin:auto;
-        }
-    </style>
+    <meta name="description" content="Get the cheapest interior staircases in montreal with high quality here! Make your dream staircase come to life!">
+    
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
-<body style="margin:auto;">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+    }
 
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+    .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('./img/gal24.jpg');
+        min-height: 100%;
+    }
 
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
+    #Fullscreen {
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
+    #Fullscreen img {
+        display: block;
+        height: 100vh;
+        margin: 0 auto;
+    }
 
+    .wrapper {
+        cursor: zoom-in;
+        overflow: hidden;
+        width: 100%;
+        height: 30vh;
+        margin: 2px;
+        margin-top: 2px;
+    }
+
+    .hor-box {
+        display: flex;
+    }
+
+    .myImg {
+        margin-top: -220px;
+    }
+
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 800px) {
+        .hor-box {
+            flex-direction: column;
+        }
+
+        #mobileAdjust1,#mobileAdjust2,#mobileAdjust3,#mobileAdjust4,#mobileAdjust5,#mobileAdjust6,#mobileAdjust7 {
+            margin-top: 0px !important;
+        }
+
+        .myImg {
+            margin-left: 0px !important;
+            margin-top: -150px !important;
+            width: 100vw;
+        }
+
+        .wrapper {
+            cursor: zoom-in;
+            overflow: hidden;
+            width: 100%;
+            height: 30vh;
+            margin: 2px;
+            margin-top: 2px;
+        }
+    }
+
+    /* Bottom left text */
+    .bottom-left {
+        position: absolute;
+        background-color: black;
+        margin: 5px;
+        padding: 0.5em;
+        font-size: 3em;
+    }
+</style>
+
+<body style="background-color:#3d2923;">
+    <div id="Fullscreen">
+        <div style="cursor:pointer" class="bottom-left">X</div>
+
+        <img src="" alt="" />
     </div>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
 
-
-    <header class="nav-down responsive-nav hidden-lg hidden-md">
-        <h7 style="margin-top:20px;">9282-3558 Quebec Inc.</h7>
-        <br>
-        <h7>RBQ: 5670-4372-01</h7>
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <!--/.navbar-header-->
-        <div id="main-nav" class="collapse navbar-collapse">
-            <nav>
-                <ul class="nav navbar-nav">
-                    <li><a href="#featured">Featured</a></li>
-                    <li><a href="#projects">Recent Projects</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+            style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Contact</a>
         </div>
-    </header>
+    </nav>
 
-    <div class="sidebar-navigation hidde-sm hidden-xs">
-        <div class="logo">
-            <a href="#">Stairs<em>factory</em></a>
-            <h4 style="color:white;margin-top:20px;">9282-3558 Quebec Inc.</h4>
-            <h4 style="color:white;">RBQ: 5670-4372-01</h4>
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+            onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:100px 16px" id="home">
+            <h1 class="w3-jumbo"><b style="display: inline-block;">Stairs</b>factory</h1>
+            <p style="font-weight: bold;">9282-3558 Quebec Inc.</p>
+            <p style="font-weight: bold;">RBQ: 5670-4372-01</p>
+            <img src="./img/gal24.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+                style="display:block;width:60%;margin:auto;">
+            <img src="./img/gal24.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+                height="1333">
+            <a target="_blank" href="https://wa.me/15146175224">
+                <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                    <i style="color:green;font-size: large;" class="fa fa-whatsapp" aria-hidden="true"></i> <b>Kobe
+                        (514) 617-5224</b>
+                </button>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/stairs.factory/">
+                <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                    <i style="color:rgb(182, 74, 150);font-size: large;" class="fa fa-instagram" aria-hidden="true"></i>
+                    <b>stairs.factory</b>
+                </button>
+            </a>
+            <a target="_blank" href="https://wa.me/15142640478">
+                <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                    <i style="color:green;font-size: large;" class="fa fa-whatsapp" aria-hidden="true"></i> <b>Harry
+                        (514) 264-0478</b>
+                </button>
+            </a>
+        </header>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-32 w3-content" id="portfolio">
+            <h2 style="text-align: center;"><small>Showroom: <a target="_blank"
+                    href="https://www.google.com/maps/place/Stairs+Factory/@45.6467949,-73.5243578,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93d0947559249:0x82d0e23208d427b7!8m2!3d45.6467912!4d-73.5221691">3917
+                        Boul St-Jean-Baptiste Pointe-aux-Trembles QC H1B 5V4</a></small></h2>
+            <h2 style="text-align: center;">Contact us: <a target="_blank"
+                    href="mailto:info@stairsfactory.com">info@stairsfactory.com</a></h2>
+            <hr class="w3-opacity">
+            <small><b>
+                    Click to enlarge pictures.
+                </b></small>
+            <!-- Grid for photos -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/recentworkgal6.jpg" style="-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/recentworkgal7.jpg" style="-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/recentworkgal5.jpg" style="-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal1.jpg"
+                            style="margin-left:-340px;margin-top:-520px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal23.jpg"
+                            style="margin-left:-140px;margin-top:-520px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal3.jpg"
+                            style="margin-left:-280px;margin-top:-370px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal4.jpg"
+                            style="margin-left:-290px;margin-top:-70px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal2.jpg"
+                            style="margin-left:-120px;margin-top:-370px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal6.jpg"
+                            style="margin-left:-120px;margin-top:-370px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal7.jpg"
+                            style="margin-left:-120px;margin-top:-870px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img id="mobileAdjust1" src="./img/gal8.jpg"
+                            style="margin-left:-720px;margin-top:-430px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img id="mobileAdjust2" src="./img/gal9.jpg"
+                            style="margin-left:-520px;margin-top:-370px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal10.jpg"
+                            style="margin-left:-120px;margin-top:-670px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal11.jpg"
+                            style="margin-left:-120px;margin-top:-370px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal12.jpg"
+                            style="margin-left:-160px;margin-top:-170px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal13.jpg"
+                            style="margin-left:-160px;margin-top:-370px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal14.jpg"
+                            style="margin-left:-160px;margin-top:-270px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal15.jpg"
+                            style="margin-left:-130px;margin-top:-270px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal16.jpg"
+                            style="margin-left:-360px;margin-top:-170px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal17.jpg"
+                            style="margin-left:-360px;margin-top:-170px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal18.jpg"
+                            style="margin-left:-260px;margin-top:-100px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal19.jpg"
+                            style="margin-left:-150px;margin-top:-170px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/recentworkgal9.png"
+                            style="margin-left:-160px;margin-top:-100px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img id="mobileAdjust3" src="./img/gal20.jpg"
+                            style="margin-left:-760px;margin-top:-370px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img id="mobileAdjust4" src="./img/gal22.jpg"
+                            style="margin-left:-360px;margin-top:-370px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal5.jpg" style="-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal24.jpg"
+                            style="margin-left:-260px;margin-top:-370px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal25.jpg"
+                            style="margin-left:-360px;margin-top:-370px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal26.jpg"
+                            style="margin-left:-360px;margin-top:-370px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal27.jpg"
+                            style="margin-left:-160px;margin-top:-370px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal28.jpg"
+                            style="margin-left:-160px;margin-top:-370px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img id="mobileAdjust5" src="./img/gal29.jpg"
+                            style="margin-left:-160px;margin-top:-370px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal30.jpg"
+                            style="margin-left:-110px;margin-top:-870px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal31.jpg"
+                            style="margin-left:-160px;margin-top:-770px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal32.jpg" style="-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal33.jpg" style="-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal34.jpg"
+                            style="margin-left:-100px;margin-top:-270px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal35.jpg" style="-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img src="./img/gal36.jpg"
+                            style="margin-left:-200px;margin-top:-370px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <div class="hor-box">
+                    <div class="wrapper">
+                        <img src="./img/gal37.jpg"
+                            style="margin-left:-160px;margin-top:-300px;-webkit-box-flex: 0;-moz-box-flex: 0;box-flex: 0; "
+                            class="myImg">
+                    </div>
+                    <div class="wrapper">
+                        <img id="mobileAdjust6" src="./img/gal38.jpg"
+                            style="margin-left:-560px;margin-top:-270px;-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1; "
+                            class="myImg">
+
+                    </div>
+                    <div class="wrapper">
+                        <img id="mobileAdjust7" src="./img/gal39.jpg"
+                            style="margin-left:-560px;margin-top:-370px;-webkit-box-flex: 2;-moz-box-flex: 2;box-flex: 2; "
+                            class="myImg">
+                    </div>
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Portfolio Section -->
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#featured">
-                        <span class="rect"></span>
-                        <span class="circle"></span>
-                        Staircase Models
-                    </a>
-                </li>
-                <li>
-                    <a href="#projects">
-                        <span class="rect"></span>
-                        <span class="circle"></span>
-                        Recent Work
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <span class="rect"></span>
-                        <span class="circle"></span>
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
-        </nav>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact Us</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i><a target="_blank"
+                    href="https://www.google.com/maps/place/Stairs+Factory/@45.6467949,-73.5243578,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93d0947559249:0x82d0e23208d427b7!8m2!3d45.6467912!4d-73.5221691">Montreal, 3917 Boul St-Jean-Baptiste Pointe-aux-Trembles QC H1B 5V4</a></p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone:            
+                    <a target="_blank" href="https://wa.me/15146175224">Kobe <b>(514) 617-5224</b></a> , 
+                    <a target="_blank" href="https://wa.me/15142640478">Harry <b>(514) 264-0478</b></a></p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a target="_blank"
+                    href="mailto:info@stairsfactory.com">info@stairsfactory.com</a></p>
+            </div>
+
+            <!-- End Contact Section -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+            <p class="w3-medium">Copyright © 2019 StairsFactory</p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
     </div>
-
-    <div class="page-content">
-        <section id="featured" class="content-section">
-            <div class="section-heading">
-                <h1>Staircase<br><em>Models</em></h1>
-                <p>We offer a wide variety of staircase models.</p>
-            </div>
-            <div class="section-content">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="image">
-                            <img src="img/6.PNG" alt="Metal staircase model 6">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image">
-                            <img src="img/7.PNG" alt="Metal staircase model 7">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="content-section">
-            <div class="section-heading">
-                <h1>Recent<br><em>Projects</em></h1>
-                <p>We take pride in our work.</p>
-            </div>
-            <section id="featured" class="content-section">
-                <div class="section-content">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal1.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal2.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal3.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal4.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal5.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal6.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal7.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal8.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal9.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal10.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal11.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal12.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal13.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal14.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal15.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal16.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal17.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal18.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal19.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal20.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal21.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal22.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal23.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal24.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal25.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal26.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal27.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal28.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal29.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal30.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal31.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal32.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal33.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal34.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal35.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal36.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal37.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal38.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/gal39.jpg" alt="Metal staircase model 1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="section-content">
-                <div class="masonry">
-                    <div class="row">
-                        <div class="item">
-                            <div class="col-md-12">
-                                <img src="img/recentwork1.JPG" alt="Metal Staircases Installation">
-                            </div>
-                        </div>
-                        <div class="item second-item">
-                            <div class="col-md-12">
-                                <img src="img/recentwork3.JPG" alt="Metal Staircases Installation">
-                            </div>
-                        </div>
-                        <div class="item third-item">
-                            <div class="col-md-12">
-                                <img src="img/recentwork5.png" alt="Metal Staircases Installation">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="video" class="content-section">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h1>How we <em>build</em> staircases.</h1>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="box-video">
-
-                        <div class="video-container">
-                            <video height="300" width="600" controls>
-                                <source src="img/video.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <video height="300" width="600" controls>
-                                <source src="img/presentation2.MP4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <br>
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="image">
-                                    <img src="img/stairs-plan.PNG" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="img/stairs-plan-1.PNG" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="img/stairs-plan-2.PNG" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="image">
-                                    <img src="img/stairs-plan-3.PNG" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="content-section">
-            <br>
-            <h1><em>3917 Boul St-Jean-Baptiste Pointe-aux-Trembles QC H1B 5V4</em></h1>
-<br>
-            <div id="map">
-
-                <!-- How to change your own map point
-                           1. Go to Google Maps
-                           2. Click on your location point
-                           3. Click "Share" and choose "Embed map" tab
-                           4. Copy only URL and paste it within the src="" field below
-                    -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178790.95603916285!2d-73.87038475532745!3d45.55819684515272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C+QC!5e0!3m2!1sen!2sca!4v1554048113622!5m2!1sen!2sca"
-                    width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <div id="contact-content">
-                <div class="section-heading">
-                    <h1>Contact <em>Stairsfactory</em></h1>
-                    <br>
-                    <br>
-                    <h1><em>Harry Helvali</em> (514) 264 0478 (Montreal division)</h1>
-                    <br>
-                    <h1><em>Koubilai Khelvaly</em> (514) 617 5224 (Montreal division)</h1>
-                    <br>
-                    <h1 style="font-size:4vh;"><em>info@stairsfactory.com</em></h1>
-                    <p>We'd love to do business, so send us a message.</p>
-
-                </div>
-            </div>
-        </section>
-        <section class="footer">
-            <p>Copyright &copy; 2019 StairsFactory</p>
-        </section>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
     <script>
-        
-        // Hide Header on on scroll down
-        var didScroll;
-        var lastScrollTop = 0;
-        var delta = 5;
-        var navbarHeight = $('header').outerHeight();
-        $(window).scroll(function (event) {
-            didScroll = true;
+        //fullscreen images
+        $(document).ready(function () {
+            //your code for stuff should go here
+            $('#Fullscreen').css('height', $(document).outerWidth() + 'px');
+            //for when you click on an image
+            $('.myImg').click(function () {
+                var src = $(this).attr('src'); //get the source attribute of the clicked image
+                $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
+                $('#Fullscreen').fadeIn();
+                $('.bottom-left').fadeIn();
+
+            });
+            $('#Fullscreen').click(function () {
+                $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
+                $('.bottom-left').fadeOut();
+            });
         });
-        setInterval(function () {
-            if (didScroll) {
-                hasScrolled();
-                didScroll = false;
-            }
-        }, 250);
-        function hasScrolled() {
-            var st = $(this).scrollTop();
-            // Make sure they scroll more than delta
-            if (Math.abs(lastScrollTop - st) <= delta)
-                return;
-            // If they scrolled down and are past the navbar, add class .nav-up.
-            // This is necessary so you never see what is "behind" the navbar.
-            if (st > lastScrollTop && st > navbarHeight) {
-                // Scroll Down
-                $('header').removeClass('nav-down').addClass('nav-up');
-            } else {
-                // Scroll Up
-                if (st + $(window).height() < $(document).height()) {
-                    $('header').removeClass('nav-up').addClass('nav-down');
-                }
-            }
-            lastScrollTop = st;
+
+        // Open and close sidebar
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.display = "none";
         }
     </script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 
 </body>
 
